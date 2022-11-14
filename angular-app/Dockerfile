@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm i npm@latest -g
+RUN npm config set unsafe-perm true
 
 RUN npm install
 
